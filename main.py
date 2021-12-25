@@ -17,6 +17,6 @@ async def on_message(message):
         return
 
     if message.content.startswith('$hello'):
-        await message.channel.send('Yoooo whats up!')
+        await message.channel.send('Yoooo whats up '  + str(message.author) + '!')
 
 client.run(os.getenv('TOKEN'))
